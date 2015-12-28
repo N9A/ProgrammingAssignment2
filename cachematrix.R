@@ -36,7 +36,7 @@ cacheSolve <- function(x, ...) {
                 return(invr)
         }
         data <- x$get()
-        invr <- mean(data, ...)
+        invr <- solve(data, ...)
         x$settoInverse(invr)
         invr
 }
